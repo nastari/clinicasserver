@@ -41,6 +41,8 @@ export const index = async (req, res) => {
     query.EXCOM = true;
   }
 
+  console.log(query);
+
     Clinic.find(query).then((data, e) => {
       if (e) {
         return res.status(400).json({ Erro: e });
