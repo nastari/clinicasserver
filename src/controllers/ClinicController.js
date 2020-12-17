@@ -13,6 +13,16 @@ export const store = async (req, res) => {
     );
 };
 
+export const list = async ( req, res ) => {
+  Clinic.find().then((data, e) => {
+    if (e) {
+      return res.status(400).json({ Erro: e });
+    }
+
+    return res.json(data);
+  });
+}
+
 
 
 
