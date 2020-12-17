@@ -24,20 +24,20 @@ const ClinicSchema = new Schema({
     required: true,
   },
   PPRA: {
-    type: String,
-    default: 'false'
+    type: Boolean,
+    default: false
   },
   PCMSO: {
-    type: String,
-    default: 'false'
+    type: Boolean,
+    default: false
   },
   EXCLI: {
-    type: String,
-    default: 'false'
+    type: Boolean,
+    default: false
   },
   EXCOM: {
-    type: String,
-    default: 'false'
+    type: Boolean,
+    default: false
   },
   createdAt: {
     type: Date,

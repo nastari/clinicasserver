@@ -1,7 +1,7 @@
 import Clinic from '../models/Clinic';
 
 export const store = async (req, res) => {
-  console.log(req.body);
+
   const clinic = new Clinic(req.body);
   await clinic
     .save()
