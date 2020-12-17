@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 const ClinicSchema = new Schema({
-  NAME: {
+  NOME: {
     type: String,
     required: true,
   },

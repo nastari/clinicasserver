@@ -41,7 +41,7 @@ export const index = async (req, res) => {
     query.EXCOM = true;
   }
 
-  console.log(query);
+
 
     Clinic.find(query).then((data, e) => {
       if (e) {
@@ -56,7 +56,7 @@ export const index = async (req, res) => {
 
 export const sort = async (req, res) => {
 
-  const clinics = await Clinic.find().sort({"NAME": 1 })
+  const clinics = await Clinic.find().sort({"NOME": 1 })
 
   if(!clinics){
     return res.status(400).json({Erro: 'Ordenação falhou.'})
