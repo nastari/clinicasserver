@@ -7,6 +7,7 @@ const routes = new Router();
 routes.get('/', (_, res) => res.json({ message: 'All systems normal.' }));
 
 routes.post('/store', ClinicController.store);
+routes.get('/list', ClinicController.list);
 routes.get('/index', ClinicController.index);
 routes.get('/sort', ClinicController.sort);
 
