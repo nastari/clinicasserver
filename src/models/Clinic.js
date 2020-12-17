@@ -3,23 +3,23 @@ import mongoose from 'mongoose';
 const { Schema } = mongoose;
 
 const ClinicSchema = new Schema({
-  name: {
+  NAME: {
     type: String,
     required: true,
   },
-  endereco: {
+  ENDEREÇO: {
     type: String,
     required: true,
   },
-  email: {
+  EMAIL: {
     type: String,
     required: true,
   },
-  cep: {
+  CEP: {
     type: String,
     required: true,
   },
-  telefone: {
+  WHATSAPP: {
     type: String,
     required: true,
   },

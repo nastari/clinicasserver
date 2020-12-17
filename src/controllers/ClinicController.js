@@ -44,7 +44,7 @@ export const index = async (req, res) => {
 
 export const sort = async (req, res) => {
 
-  const clinics = await Clinic.find().sort({"name": 1 })
+  const clinics = await Clinic.find().sort({"NAME": 1 })
 
   if(!clinics){
     return res.status(400).json({Erro: 'Ordenação falhou.'})
