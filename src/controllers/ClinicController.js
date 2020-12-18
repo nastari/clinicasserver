@@ -14,7 +14,7 @@ export const store = async (req, res) => {
 };
 
 export const list = async ( req, res ) => {
-  Clinic.find().then((data, e) => {
+  Clinic.find().sort({"createdAt": -1 }).then((data, e) => {
     if (e) {
       return res.status(400).json({ Erro: e });
     }
@@ -43,7 +43,7 @@ export const index = async (req, res) => {
 
 
 
-    Clinic.find(query).then((data, e) => {
+    Clinic.find(query).sort({"createdAt": -1 }).then((data, e) => {
       if (e) {
         return res.status(400).json({ Erro: e });
       }
