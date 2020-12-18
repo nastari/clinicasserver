@@ -23,6 +23,10 @@ const ClinicSchema = new Schema({
     type: String,
     required: true,
   },
+  WHATSAPPFORMATTED: {
+    type: String,
+    required: true,
+  },
   PPRA: {
     type: Boolean,
     default: false

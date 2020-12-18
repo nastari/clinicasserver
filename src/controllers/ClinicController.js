@@ -2,6 +2,7 @@ import Clinic from '../models/Clinic';
 
 export const store = async (req, res) => {
   req.body.WHATSAPPFORMATTED = req.body.WHATSAPP.replace(/[^0-9]/g, '');
+
   const clinic = new Clinic(req.body);
   await clinic
     .save()
